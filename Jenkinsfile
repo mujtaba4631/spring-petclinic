@@ -45,7 +45,7 @@ pipeline {
           steps {
             sh './mvnw verify'
             junit '**/target/surefire-reports/*.xml'
-            perfReport 'e. **/target/jmeter/results/*'
+            perfReport '**/target/jmeter/results/*'
           }
         }
 
